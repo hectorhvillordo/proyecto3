@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: whitesmoke;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+header img{
+    width: 11rem;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+header nav ul li{
+    margin: 15px;
+}
+
+/*Modifico los botones del navegador*/
+
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    padding: 2px 20px 2px 20px; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
+    transition: 1s
+}
+.boton{
+    background-color: solid gray;
+}
+
+.boton:hover{
+    color: #0FFB28;
+    background-color: black;
+    opacity: 70%;
+    margin: 10px;
+}
+
+/*Imagen de portada*/
+
+section img{
+    padding: 20px;
+    width: 93rem;
+    
+}
+
+/* Titulos de las paginas*/
+h1{
+    margin: 25px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
+}
+
+h2{
+    margin: 10px;
+    
+}
+
+
+/*logo de whatsapp*/
+
+.logo-wpp{
+    width: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+/*Pie de pagina*/
+footer div{
+    border-top: 2px solid gray;
+}
+
+footer div p{
+    padding-left: 50px;
+    margin: 29px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+/*logo instagram, face y linkedin*/
+
+.redes{
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.redes a{
+     margin: 15px;
+     text-decoration: none;
+     font-size: 20px;
+     width: 60px;
+     height: 60px;
+     line-height: 60px;
+     text-align: center;
+     background: #314652;
+     color: #f1f1f1;
+     border-radius: 50%;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+     transition: all .4s ease-in-out;
+}
+.redes a:hover{
+    transform: scale(1.2);
+    color: #0FFB28;
+}
+footer p{
+    text-align: center;
+}
+/* Pagina de Nosotros*/
+
+.Nosotros{
+    text-align: center;
+    margin: 50px;
+    margin-top: 1px;
+}
+
+.nosimg{
+    width: 30%;
+    margin: 20px;
+}
+.nosimg2{
+    width: 30%;
+    margin: 50px;
+}
+
+/*pagina de flota*/
+.letra{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    margin: 25px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
+    font-size: 30px;
+    font-weight: 600;
+}
+.letra2{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    margin: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.letra3{
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+/*Pagina de Contacto*/
+form{
+    box-sizing: border-box;
+    width: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+form input:focus{
+    background-color: #314652;
+    color: #0FFB28;
+}
+form textarea:focus{
+    background-color: #314652;
+    color: #0FFB28;
+}
+
+/*Pestaña de servicios*/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px 450px;
+    grid-template-areas: 
+    "tpap tad tae"
+    "tpap tad tae";
+    margin: 30px;
+}
+.Puerta{
+    grid-area: tpap;
+    text-align: center;
+}
+.Puerta img{
+    width: 25rem;
+}
+.Distancia{
+    grid-area: tad;
+    text-align: center;
+}
+.Distancia img{
+    width: 25rem;
+    
+}
+.sempre{
+    grid-area: tae;
+    text-align: center;
+    margin-bottom: 30%;
+
+}
+.sempre img{
+    width: 25rem;
+    
+}
+
