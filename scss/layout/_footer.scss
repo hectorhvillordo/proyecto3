@@ -35,9 +35,9 @@ footer{
         box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
         transition: all .4s ease-in-out;
         
-        &.hover{
+        &:hover{
             transform: scale(1.2);
-            color: $color;
+            color: #0FFB28;
         }
     }
 }

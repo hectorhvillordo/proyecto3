@@ -85,7 +85,7 @@ footer p {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   transition: all 0.4s ease-in-out;
 }
-.redes a.hover {
+.redes a:hover {
   transform: scale(1.2);
   color: #0FFB28;
 }
@@ -168,6 +168,10 @@ h2 {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  transition: 1s;
+}
+.logo-wpp:hover {
+  transform: rotate(360deg);
 }
 
 .grid {

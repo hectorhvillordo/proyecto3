@@ -70,4 +70,9 @@ h2{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    transition: 1s;
+   
+    &:hover{
+        transform: rotate(360deg);
+    }
 }
