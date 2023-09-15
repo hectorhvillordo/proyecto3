@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-3",
+  "version": "1.0.0",
+  "description": "Proyecto de creaccion de la pagina de internet de una empresa de transporte.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.66.1"
+  }
+}

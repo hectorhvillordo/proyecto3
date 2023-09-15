@@ -1,0 +1,43 @@
+@import "../utilities/variables";
+
+footer{
+    div{
+        border-top: 2px $color2;
+        p{
+            padding-left: 50px;
+            margin: 29px;
+            font-family: 'Bungee Spice', cursive;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+        }
+    }
+    p{
+        text-align: center;
+    }
+} 
+
+.redes{
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    a{
+        margin: 15px;
+        text-decoration: none;
+        font-size: 20px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background: #314652;
+        color: #f1f1f1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+        transition: all .4s ease-in-out;
+        
+        &.hover{
+            transform: scale(1.2);
+            color: $color;
+        }
+    }
+}
