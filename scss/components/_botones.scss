@@ -1,2 +1,13 @@
-@import "../utilities/variables";
+@import "../layout/servicios";
 
+@media screen and (max-width: 720px ) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 800px 900px;
+        grid-template-areas: 
+        "tpap"
+        "tad"
+        "tae";
+    }
+}
