@@ -16,6 +16,7 @@
     <meta name="keywords" content="transporte, transporte de pasajeros, transporte de carga, transporte mensajería, transporte seguro, transporte confiable, transporte en la ciudad de Plottier y Neuquén.">
     <meta name="author" content="Héctor Villordo">
     <link rel="shortcut icon" href="img/Logo 2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <header>
@@ -28,10 +29,34 @@
             <li><a class="boton" href="Html/flota.html">Flota</a></li>
             <li><a class="boton" href="Html/Contacto.html">Contacto</a></li>
         </ul>
-    </nav>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="dropdown_menu open">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Html/Nosotros.html">Nosotros</a></li>
+            <li><a href="Html/Servicios.html">Servicios</a></li>
+            <li><a href="Html/flota.html">Flota</a></li>
+            <li><a href="Html/Contacto.html">Contacto</a></li>
+        </div>
+   
     </header>
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropDownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars-staggered"
+        }
+    </script>
+     </nav>
 <section>
-    <img src="img/Servokup inicio.jpg" alt="imagen de inicio" >
+    <img src="img/Servokup inicio.jpg" alt="imagen-inicio" >
 </section>
 <div>
     <a href="https://web.whatsapp.com/" target="_blank">

@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="../img/Logo 2.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+<header>
         <img src="../img/Logo 4.png" alt="Logo Servokup">
     <nav>
         <ul>
@@ -28,9 +28,40 @@
             <li><a class="boton" href="../Html/flota.html">Flota</a></li>
             <li><a class="boton" href="../Html/Contacto.html">Contacto</a></li>
         </ul>
+    
+    <div class="toggle_btn">
+        <i class="fa-solid fa-bars-staggered"></i>
+    </div>
+    <div class="dropdown_menu open">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../Html/Nosotros.html">Nosotros</a></li>
+        <li><a href="../Html/Servicios.html">Servicios</a></li>
+        <li><a href="../Html/flota.html">Flota</a></li>
+        <li><a href="../Html/Contacto.html">Contacto</a></li>
+    </div>
+
+        <script>
+            const toggleBtn = document.querySelector(".toggle_btn")
+            const toggleBtnIcon = document.querySelector(".toggle_btn i")
+            const dropDownMenu = document.querySelector(".dropdown_menu")
+
+            toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle("open")
+            const isOpen = dropDownMenu.classList.contains("open")
+            toggleBtnIcon.classList = isOpen
+            ? "fa-solid fa-xmark"
+            : "fa-solid fa-bars-staggered"
+            }
+        </script>
     </nav>
-    </header>
+</header>
     <h1>Contacto</h1>
+    <h2>
+        <p>
+            Nos interesa conocerte, saber tu opinion y poder despejar cualquier consulta respecto a los servicios que ofrecemos.
+            Recuerda que tu cometario es muy importante para nosotros por lo que te invitamos a dejar el mismo. 
+        </p>
+    </h2>
 
         <form action="/fomulario" method="post">
             <label for="Nombre">Nombre</label>

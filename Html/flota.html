@@ -31,6 +31,31 @@
             <li><a class="boton" href="../Html/Contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </div>
+      <div class="dropdown_menu open">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../Html/Nosotros.html">Nosotros</a></li>
+      <li><a href="../Html/Servicios.html">Servicios</a></li>
+      <li><a href="../Html/flota.html">Flota</a></li>
+      <li><a href="../Html/Contacto.html">Contacto</a></li>
+    </div>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn")
+      const toggleBtnIcon = document.querySelector(".toggle_btn i")
+      const dropDownMenu = document.querySelector(".dropdown_menu")
+
+      toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle("open")
+      const isOpen = dropDownMenu.classList.contains("open")
+      toggleBtnIcon.classList = isOpen
+      ? "fa-solid fa-xmark"
+      : "fa-solid fa-bars-staggered"
+      }
+    </script>
+
     </header>
     <section>
     <h1 class="letra">Flota</h1>

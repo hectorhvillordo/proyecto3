@@ -3,13 +3,13 @@
 header{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: whitesmoke;
     border-bottom: 2px $color2;
     padding: 10px;
 
     img{
-        width: 11rem;
+        width: 9rem;
     }
 
     nav{
@@ -26,7 +26,7 @@ header{
                     font-family: 'Bungee Spice', cursive;
                     font-family: 'Josefin Sans', sans-serif;
                     font-family: 'Playfair Display', serif;
-                    font-size: 15px;
+                    font-size: 12px;
                     padding: 2px 20px 2px 20px; 
                     border-radius: 5px;
                     box-shadow: 2px 2px 5px rgb(0, 0, 0, .5);
@@ -35,6 +35,54 @@ header{
             }
         }
     }
+}
+
+.toggle_btn{
+    color: $color2;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    &:hover{
+        color: $color;
+    }
+
+}
+
+.dropdown_menu{
+    margin: 1.5rem;
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: $color3;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       
+}
+
+.dropdown_menu.open{
+    height: 240px;
+    
+}
+
+.dropdown_menu li{
+
+    padding: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 
@@ -50,8 +98,11 @@ header{
 }
 
 section img{
-    padding: 20px;
-    width: 93rem;
+    
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+
 }
 
 h1{
